@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/logo_alura.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <div class="container__apresentencao">
+            <section class="apresentencao__inicial">
+                <textarea class="apresentacao__entrada" id="entrada"   placeholder="Digite seu texto"></textarea>
+                <div class="alerta">
+                    <img src="img/img_info.png" width="16px" height="16px" alt="Icone de informação">
+                    <p class="txt__alerta">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="container__botoes">
+                    <div>
+                     <button class="botoes" id="criptografar" onclick="criptografar()">Criptografar</button>
+                    </div>
+                    <div>
+                     <button class="botoes" id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+            <aside class="apresentacao__final">
+                <textarea id="resultado"  readonly></textarea>
+                <div id="conteudo">
+                    <img class="img__boneco" src="img/boneco.svg" alt="Boneco com lupa">
+                    <p class="apresentacao__saida__info">Nenhuma mensagem encontrada</p>
+                    <div class="apresentacao__saida" >Digite um texto que você deseja criptografar ou descriptografar.</div>
+                    </div>
+                <button id="btn_copiar" class="btn__copiar">Copiar</button>
+            </aside>
+        </div>
+    </main>
+    <footer class="rodape"></footer>
+</body>
+</html>
